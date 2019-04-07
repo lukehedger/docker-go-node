@@ -1,4 +1,4 @@
-FROM golang:1.12 as builder
+FROM golang:1.12-alpine as builder
 COPY . /api
 WORKDIR /api
 ENV GO111MODULE=on
